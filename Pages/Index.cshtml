@@ -12,17 +12,17 @@
         <form method="post">
             <div class="form-group">
                 <div class="row">
-                    <label asp-for="NumberA" class="col-lg-2"></label>
-                    <input type="number" asp-for="NumberA" class="col-lg-2" />
+                    <label asp-for="@Model.calculatorDTO.NumberA" class="col-lg-2"></label>
+                    <input type="number" asp-for="@Model.calculatorDTO.NumberA" class="col-lg-2" />
                 </div>
                 <div class="row">
-                    <label asp-for="NumberB" class="col-lg-2"></label>
-                    <input type="number" asp-for="NumberB" class="col-lg-2" />
+                    <label asp-for="@Model.calculatorDTO.NumberB" class="col-lg-2"></label>
+                    <input type="number" asp-for="@Model.calculatorDTO.NumberB" class="col-lg-2" />
                 </div>
 
                 <div class="row">
-                    <label asp-for="Operation" class="col-lg-2"></label>
-                    <select asp-for="Operation" asp-items="@Model.Operations"></select>
+                    <label asp-for="@Model.calculatorDTO.Operation" class="col-lg-2"></label>
+                    <select asp-for="@Model.calculatorDTO.Operation" asp-items="@Model.Operations"></select>
                 </div>
                 
                 @*<div class="row">
@@ -40,8 +40,8 @@
     <div class="card-footer">
 
         <div class="row">
-            <label asp-for="Result" class="col-lg-2"></label>
-            <input type="number" disabled="disabled" class="col-lg-2" asp-for="Result" />
+            <label asp-for="@Model.calculatorDTO.Result" class="col-lg-2"></label>
+            <input type="number" disabled="disabled" class="col-lg-2" asp-for="@Model.calculatorDTO.Result" />
         </div>
     </div>
 
